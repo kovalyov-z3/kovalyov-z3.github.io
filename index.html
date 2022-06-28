@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tag -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Title -->
+  <title>Ледогенератор</title>
+
+  <!-- Fonts -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,700|Lato" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <script>
+    const imgLinks = [
+    
+    'second.jpg',
+    'third.jpg',
+    'pic4.jpg',
+    'pic5.jpg'
+];
+const delay = 5000;
+let currentIndex = 0;
+setInterval(function() {
+    document.getElementById('img').src = imgLinks[currentIndex];
+    currentIndex++;
+    if(currentIndex >= imgLinks.length) {
+        currentIndex = 0;
+    }
+}, delay);
+  </script>
+  
+</head>
+<body>
+  <div class="container_main">
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <a class="nav-link brand" href="https://tercservice.ru">Terс Service</a>
+
+      <div class="nav-links-right">
+        <a class="nav-link" href="https://www.youtube.com/channel/UCsivckXzXKiXiAyzYYy8oxw">YouTube</a>
+        <!-- <a class="nav-link" href="">Link</a>
+        <a class="nav-link" href="">Link</a> -->
+      </div>
+    </div>
+
+    <div class="galery">
+      <div class="galery_first">
+        <img src="first.jpg" id = "img">
+      </div>
+      <!-- <div class="galery_first">
+        <img src="second.jpg">
+      </div>
+      <div class="galery_first">
+        <img src="third.jpg">
+      </div> -->
+      
+    </div>
+    <div class="features">
+      <div class="section half-section feature feature-1">
+        <h3>Технические характеристики</h3>
+        <p>
+          Ледогенератор Manitowoc ib1024yc.
+          Такие генераторы обладают максимальной производительностью и уникальными техническими характеристиками, работают в ресторанах с огромной проходимостью(MacDonald's) и на круизных судах.
+          Эксплутационные расходы минимальны при высочайшей надёжности, не требует дополнительных покупок - достаточно просто подключить воду.
+          Сделано в США. Материал корпуса - нержавеющая сталь. Данный образец имеет выносной конденсатор, может быть размещён на улице.
+        
+        </p>
+      </div>
+
+      <div class="section half-section feature feature-2">
+        <h3>Дополнительная информация</h3>
+        <p>Возможна аренда. Доставка по России в любой город. Гарантия - 6 месяцев.
+          Кроме того, мы готовы обеспечить сборку, подключение, установку и ввод в эксплуатацию.
+          Генератор новый! При всех перечисленных уникальных характеристиках цена составит всего 300000 рублей, что в 2 раза ниже среднерыночного предложения!
+          Более подробная информация о технических характеристиках <a href="https://manualzz.com/doc/20379178/manitowoc-cvd1075-part-manual"> здесь </a>.
+          Возможна также доставка в страны СНГ. По всем вопросам обращайтесь по телефону, указанному в контактах.
+        </p>
+      </div>
+    </div>
+    <div class="fourteenth">
+      
+      
+        <div class="fourteenth-container">
+        
+          <div class="fourteenth-contacts">
+            <div class="fourteenth-text">
+              <h1 align="center"> Контакты </h1>
+              <p id="phone"><img src="Ikonka_telefon.svg"> +7(967)-193-37-77</p>
+              <p id="adress"><img src="Ikonka_adres.svg"> Москва, Ул. Народная 8</p>
+              <p id="mail"><img src="Ikonka_email.svg"> master@tercservice.ru</p>
+              <div class="fourteenth-icons">
+                
+              </div>
+            </div>
+          </div>
+        
+          <div class="fourteenth-map">
+            <iframe src="" frameborder="0"></iframe>
+          </div>
+        
+        
+        </div>
+  </div>
+</body>
+</html>
